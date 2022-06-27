@@ -2,7 +2,10 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "table-data": "libs/table-data",
+    "table-search": "libs/table-search",
     "transactions": "apps/transactions",
-    "transactions-e2e": "apps/transactions-e2e"
+    "transactions-e2e": "apps/transactions-e2e",
+    "ui": "libs/ui"
   }
 }

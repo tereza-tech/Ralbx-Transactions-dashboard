@@ -1,1 +1,7 @@
 <ralbx-nx-welcome></ralbx-nx-welcome>
+<ralbx-table-search></ralbx-table-search>
+<div>
+  <h1>Team members</h1>
+  <ralbx-team-cards [teammembers]="membersService.teamMembers$ | async">
+  </ralbx-team-cards>
+</div>

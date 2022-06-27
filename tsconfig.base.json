@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ralbx/table-data": ["libs/table-data/src/index.ts"],
+      "@ralbx/table-search": ["libs/table-search/src/index.ts"],
+      "@ralbx/ui": ["libs/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

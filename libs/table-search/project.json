@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/table-search/src",
+  "prefix": "ralbx",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/table-search"],
+      "options": {
+        "jestConfig": "libs/table-search/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/table-search/**/*.ts",
+          "libs/table-search/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,10 @@
+<h1>Last Transactions</h1>
+
+<table class="table">
+  <tr *ngFor="let transact of transactionsList$ | async">
+    <td>{{ transact.id }}</td>
+    <td>{{ transact.from }}</td>
+    <td>{{ transact.to }}</td>
+    <td>{{ transact.date | date }}</td>
+  </tr>
+</table>

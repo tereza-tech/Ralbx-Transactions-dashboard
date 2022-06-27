@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MemberDataService } from '@ralbx/table-data'
 
 @Component({
   selector: 'ralbx-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'transactions';
+  constructor(public membersService: MemberDataService) { }
 }
