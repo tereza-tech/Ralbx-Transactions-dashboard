@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/transactions",
         "index": "apps/transactions/src/index.html",
@@ -17,7 +19,9 @@
           "apps/transactions/src/favicon.ico",
           "apps/transactions/src/assets"
         ],
-        "styles": ["apps/transactions/src/styles.scss"],
+        "styles": [
+          "apps/transactions/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -63,6 +67,10 @@
           "browserTarget": "transactions:build:development"
         }
       },
+      "options": {
+        "browserTarget": "project-name:build",
+        "proxyConfig": "mock/proxy.conf.json"
+      },
       "defaultConfiguration": "development"
     },
     "extract-i18n": {
@@ -82,7 +90,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/transactions"],
+      "outputs": [
+        "coverage/apps/transactions"
+      ],
       "options": {
         "jestConfig": "apps/transactions/jest.config.ts",
         "passWithNoTests": true

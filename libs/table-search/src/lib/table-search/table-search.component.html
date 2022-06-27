@@ -2,9 +2,12 @@
 
 <table class="table">
   <tr *ngFor="let transact of transactionsList$ | async">
-    <td>{{ transact.id }}</td>
+    <i>{{ transact.id }}</i>
+    <td>{{ transact.date | date }}</td>
+    <td>{{ transact.name }}</td>
     <td>{{ transact.from }}</td>
     <td>{{ transact.to }}</td>
-    <td>{{ transact.date | date }}</td>
+    <td>{{ transact.amount }}</td>
+    <td>{{ transact.note }}</td>
   </tr>
 </table>

@@ -10,3 +10,9 @@ Nx monorepo:
 - Angular 14
 - Typescript
 - Scss
+
+
+*Use generators:*
+npm run / npx ng g component team-cards --project=ui --export
+npm run / npx ng g service table-data --project=table-data   
+npm run / npx ng g lib table-search --buildable
