@@ -6,6 +6,7 @@
     "table-search": "libs/table-search",
     "transactions": "apps/transactions",
     "transactions-e2e": "apps/transactions-e2e",
-    "ui": "libs/ui"
+    "ui": "libs/ui",
+    "tailwind-preset": "libs/tailwind-preset"
   }
 }
