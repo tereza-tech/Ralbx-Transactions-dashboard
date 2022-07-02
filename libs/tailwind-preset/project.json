@@ -1,7 +1,9 @@
 {
-    "projectType": "library",
-    "root": "libs/tailwind-preset",
-    "sourceRoot": "libs/tailwind-preset",
-    "targets": {},
-    "tags": []
+  "projectType": "library",
+  "root": "libs/tailwind-preset",
+  "sourceRoot": "libs/tailwind-preset",
+  "targets": {},
+  "tags": [
+    "type:lib"
+  ]
 }

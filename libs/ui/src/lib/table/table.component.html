@@ -1,0 +1,453 @@
+<div
+  class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded"
+  [ngClass]="color === 'light' ? 'bg-white' : 'bg-red-900 text-white'"
+>
+  <div class="block w-full overflow-x-auto">
+    <!-- Projects table -->
+    <table class="items-center w-full bg-transparent border-collapse">
+      <thead>
+        <tr>
+          <th
+            class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+            [ngClass]="
+              color === 'light'
+                ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                : 'bg-red-800 text-red-300 border-red-700'
+            "
+          >
+            1
+          </th>
+          <th
+            class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+            [ngClass]="
+              color === 'light'
+                ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                : 'bg-red-800 text-red-300 border-red-700'
+            "
+          >
+            2
+          </th>
+          <th
+            class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+            [ngClass]="
+              color === 'light'
+                ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                : 'bg-red-800 text-red-300 border-red-700'
+            "
+          >
+            3
+          </th>
+          <th
+            class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+            [ngClass]="
+              color === 'light'
+                ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                : 'bg-red-800 text-red-300 border-red-700'
+            "
+          >
+            4
+          </th>
+          <th
+            class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+            [ngClass]="
+              color === 'light'
+                ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                : 'bg-red-800 text-red-300 border-red-700'
+            "
+          >
+            5
+          </th>
+          <th
+            class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+            [ngClass]="
+              color === 'light'
+                ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                : 'bg-red-800 text-red-300 border-red-700'
+            "
+          >
+            6
+          </th>
+          <th
+            class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+            [ngClass]="
+              color === 'light'
+                ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                : 'bg-red-800 text-red-300 border-red-700'
+            "
+          >
+            7
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
+          >
+            <img
+              src="assets/img/bootstrap.jpg"
+              class="h-12 w-12 bg-white rounded-full border"
+              alt="..."
+            />
+            <span
+              class="ml-3 font-bold"
+              [ngClass]="color === 'light' ? 'text-blueGray-600' : 'text-white'"
+            >
+              Argon Design System
+            </span>
+          </th>
+          <td>X</td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            $2,500 USD
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <i class="fas fa-circle text-orange-500 mr-2"></i> pending
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <div class="flex">
+              <img
+                src="assets/img/team-1-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
+              />
+              <img
+                src="assets/img/team-2-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+              <img
+                src="assets/img/team-3-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+              <img
+                src="assets/img/team-4-470x470.png"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+            </div>
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right"
+          ></td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <div class="flex items-center">
+              <button
+                class="text-white bg-emerald-500 text-xs font-bold px-2 py-1 rounded outline-none focus:outline-none mr-1 my-4"
+              >
+                <fa-icon [icon]="faPenToSquare"></fa-icon>
+              </button>
+              <button
+                class="text-white bg-red-500 text-xs font-bold px-2 py-1 rounded outline-none focus:outline-none mr-1 my-4"
+              >
+                <fa-icon [icon]="faTrashCan"></fa-icon>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
+          >
+            <img
+              src="assets/img/angular.jpg"
+              class="h-12 w-12 bg-white rounded-full border"
+              alt="..."
+            />
+            <span
+              class="ml-3 font-bold"
+              [ngClass]="color === 'light' ? 'text-blueGray-600' : 'text-white'"
+            >
+              Angular Now UI Kit PRO
+            </span>
+          </th>
+          <td>X</td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            $1,800 USD
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <i class="fas fa-circle text-emerald-500 mr-2"></i>
+            completed
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <div class="flex">
+              <img
+                src="assets/img/team-1-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
+              />
+              <img
+                src="assets/img/team-2-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+              <img
+                src="assets/img/team-3-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+              <img
+                src="assets/img/team-4-470x470.png"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+            </div>
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right"
+          ></td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <div class="flex items-center">
+              <button
+                class="text-white bg-emerald-500 text-xs font-bold px-2 py-1 rounded outline-none focus:outline-none mr-1 my-4"
+              >
+                <fa-icon [icon]="faPenToSquare"></fa-icon>
+              </button>
+              <button
+                class="text-white bg-red-500 text-xs font-bold px-2 py-1 rounded outline-none focus:outline-none mr-1 my-4"
+              >
+                <fa-icon [icon]="faTrashCan"></fa-icon>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
+          >
+            <img
+              src="assets/img/sketch.jpg"
+              class="h-12 w-12 bg-white rounded-full border"
+              alt="..."
+            />
+            <span
+              class="ml-3 font-bold"
+              [ngClass]="color === 'light' ? 'text-blueGray-600' : 'text-white'"
+            >
+              Black Dashboard Sketch
+            </span>
+          </th>
+          <td>X</td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            $3,150 USD
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <i class="fas fa-circle text-red-500 mr-2"></i> delayed
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <div class="flex">
+              <img
+                src="assets/img/team-1-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
+              />
+              <img
+                src="assets/img/team-2-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+              <img
+                src="assets/img/team-3-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+              <img
+                src="assets/img/team-4-470x470.png"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+            </div>
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right"
+          ></td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <div class="flex items-center">
+              <button
+                class="text-white bg-emerald-500 text-xs font-bold px-2 py-1 rounded outline-none focus:outline-none mr-1 my-4"
+              >
+                <fa-icon [icon]="faPenToSquare"></fa-icon>
+              </button>
+              <button
+                class="text-white bg-red-500 text-xs font-bold px-2 py-1 rounded outline-none focus:outline-none mr-1 my-4"
+              >
+                <fa-icon [icon]="faTrashCan"></fa-icon>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
+          >
+            <img
+              src="assets/img/react.jpg"
+              class="h-12 w-12 bg-white rounded-full border"
+              alt="..."
+            />
+            <span
+              class="ml-3 font-bold"
+              [ngClass]="color === 'light' ? 'text-blueGray-600' : 'text-white'"
+            >
+              React Material Dashboard
+            </span>
+          </th>
+          <td>X</td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            $4,400 USD
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <i class="fas fa-circle text-teal-500 mr-2"></i> on schedule
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <div class="flex">
+              <img
+                src="assets/img/team-1-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
+              />
+              <img
+                src="assets/img/team-2-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+              <img
+                src="assets/img/team-3-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+              <img
+                src="assets/img/team-4-470x470.png"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+            </div>
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right"
+          ></td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <div class="flex items-center">
+              <button
+                class="text-white bg-emerald-500 text-xs font-bold px-2 py-1 rounded outline-none focus:outline-none mr-1 my-4"
+              >
+                <fa-icon [icon]="faPenToSquare"></fa-icon>
+              </button>
+              <button
+                class="text-white bg-red-500 text-xs font-bold px-2 py-1 rounded outline-none focus:outline-none mr-1 my-4"
+              >
+                <fa-icon [icon]="faTrashCan"></fa-icon>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
+          >
+            <img
+              src="assets/img/vue.jpg"
+              class="h-12 w-12 bg-white rounded-full border"
+              alt="..."
+            />
+            <span
+              class="ml-3 font-bold"
+              [ngClass]="color === 'light' ? 'text-blueGray-600' : 'text-white'"
+            >
+              React Material Dashboard
+            </span>
+          </th>
+          <td>X</td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            $2,200 USD
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <i class="fas fa-circle text-emerald-500 mr-2"></i>
+            completed
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <div class="flex">
+              <img
+                src="assets/img/team-1-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
+              />
+              <img
+                src="assets/img/team-2-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+              <img
+                src="assets/img/team-3-800x800.jpg"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+              <img
+                src="assets/img/team-4-470x470.png"
+                alt="..."
+                class="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+              />
+            </div>
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right"
+          ></td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+            <div class="flex items-center">
+              <button
+                class="text-white bg-emerald-500 text-xs font-bold px-2 py-1 rounded outline-none focus:outline-none mr-1 my-4"
+              >
+                <fa-icon [icon]="faPenToSquare"></fa-icon>
+              </button>
+              <button
+                class="text-white bg-red-500 text-xs font-bold px-2 py-1 rounded outline-none focus:outline-none mr-1 my-4"
+              >
+                <fa-icon [icon]="faTrashCan"></fa-icon>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

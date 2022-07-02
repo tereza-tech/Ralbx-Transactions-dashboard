@@ -2,11 +2,11 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "app-transactions": "apps/app-transactions",
+    "app-transactions-e2e": "apps/app-transactions-e2e",
     "table-data": "libs/table-data",
     "table-search": "libs/table-search",
-    "transactions": "apps/transactions",
-    "transactions-e2e": "apps/transactions-e2e",
-    "ui": "libs/ui",
-    "tailwind-preset": "libs/tailwind-preset"
+    "tailwind-preset": "libs/tailwind-preset",
+    "ui": "libs/ui"
   }
 }

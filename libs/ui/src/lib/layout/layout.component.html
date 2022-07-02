@@ -1,0 +1,21 @@
+<div>
+  <!--div class="relative md:ml-64 bg-blueGray-100">
+    <ralbx-navbar></ralbx-navbar>
+    <div class="px-4 md:px-10 mx-auto w-full">
+      <ralbx-table-search></ralbx-table-search>
+      <ralbx-team-cards [teammembers]="membersService.teamMembers$ | async">
+      </ralbx-team-cards>
+      <ralbx-card></ralbx-card>
+    </div>
+  </div-->
+
+  <ralbx-sidebar></ralbx-sidebar>
+  <div class="relative md:ml-64 bg-blueGray-100">
+    <ralbx-navbar></ralbx-navbar>
+
+    <div class="px-4 md:px-10 mx-auto w-full -m-24">
+      <ralbx-dashboard></ralbx-dashboard>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
