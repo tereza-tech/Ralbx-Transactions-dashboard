@@ -1,0 +1,20 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Michal"
+    },
+    {
+      "id": 2,
+      "name": "Jakub"
+    },
+    {
+      "id": 3,
+      "name": "Honza"
+    },
+    {
+      "id": 4,
+      "name": "Terka"
+    }
+  ]
+}

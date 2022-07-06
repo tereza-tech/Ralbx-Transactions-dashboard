@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/app-transactions",
         "index": "apps/app-transactions/src/index.html",
@@ -15,9 +17,15 @@
         "inlineStyleLanguage": "scss",
         "assets": [
           "apps/app-transactions/src/favicon.ico",
-          "apps/app-transactions/src/assets"
+          "apps/app-transactions/src/assets",
+          "apps/app-transactions/src/mock"
         ],
-        "styles": ["apps/app-transactions/src/styles.scss"],
+        "styles": [
+          "apps/app-transactions/src/styles.scss",
+          "node_modules/primeng/resources/themes/saga-blue/theme.css",
+          "node_modules/primeng/resources/primeng.min.css",
+          "node_modules/primeicons/primeicons.css"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -82,7 +90,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/app-transactions"],
+      "outputs": [
+        "coverage/apps/app-transactions"
+      ],
       "options": {
         "jestConfig": "apps/app-transactions/jest.config.ts",
         "passWithNoTests": true

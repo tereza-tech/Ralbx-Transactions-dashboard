@@ -22,7 +22,7 @@ import { FieldType } from '@ngx-formly/core';
       <input
         pInputText
         type="text"
-        [value]="formControl.value | translocoDate: { dateStyle: 'medium' }"
+        [value]="formControl.value"
         [attr.data-cy]="key"
         disabled
         style="width: 100%;"
