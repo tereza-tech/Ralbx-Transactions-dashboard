@@ -1,24 +1,37 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "rootDir": ".",
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    "downlevelIteration": true,
     "experimentalDecorators": true,
+    "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
+    "target": "es2020",
+    "module": "es2020",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "paths": {
-      "@ralbx/table-data": ["libs/table-data/src/index.ts"],
-      "@ralbx/table-search": ["libs/table-search/src/index.ts"],
-      "@ralbx/ui": ["libs/ui/src/index.ts"]
+     "@ralbx/table-data": [
+      "libs/table-data/src/index.ts"
+    ],
+    "@ralbx/table-search": [
+      "libs/table-search/src/index.ts"
+    ],
+    "@ralbx/ui": [
+      "libs/ui/src/index.ts"
+    ]
     }
-  },
-  "exclude": ["node_modules", "tmp"]
+  }
 }

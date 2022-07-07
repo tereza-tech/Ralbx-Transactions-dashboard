@@ -1,16 +1,22 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-
 export const environment = {
   production: false,
-};
+  firebaseConfig: {
+    /*  apiKey: "AIzaSyB1rHvaatt8YxFCB0v92SSWHsqr8gcdh6g",
+      authDomain: "ralbx-hub.firebaseapp.com",
+      databaseURL: "https://ralbx-hub-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "ralbx-hub",
+      storageBucket: "ralbx-hub.appspot.com",
+      messagingSenderId: "51450444873",
+      appId: "1:51450444873:web:572179872fd6a353f51398"
+    }*/
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+    apiKey: 'AIzaSyDBO8wdMh4c48m1SoSG2wPjmHIs3xhjdQ4',
+    authDomain: 'test-ralbx.firebaseapp.com',
+    projectId: 'test-ralbx',
+    databaseURL:
+      'https://test-ralbx-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'test-ralbx.appspot.com',
+    messagingSenderId: '352063790262',
+    appId: '1:352063790262:web:64410e7412cdab217a1a17',
+  }
+};
