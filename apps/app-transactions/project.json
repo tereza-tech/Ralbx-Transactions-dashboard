@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/app-transactions",
         "index": "apps/app-transactions/src/index.html",
@@ -17,7 +19,9 @@
           "apps/app-transactions/src/favicon.ico",
           "apps/app-transactions/src/assets"
         ],
-        "styles": ["apps/app-transactions/src/styles.scss"],
+        "styles": [
+          "apps/app-transactions/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -26,7 +30,7 @@
             {
               "type": "initial",
               "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumError": "2mb"
             },
             {
               "type": "anyComponentStyle",
@@ -82,7 +86,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/app-transactions"],
+      "outputs": [
+        "coverage/apps/app-transactions"
+      ],
       "options": {
         "jestConfig": "apps/app-transactions/jest.config.ts",
         "passWithNoTests": true

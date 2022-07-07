@@ -1,4 +1,5 @@
 export const environment = {
+  NX_BRANCH: 'testing npx nx run app-transactions: build',
   production: false,
   firebaseConfig: {
     /*  apiKey: "AIzaSyB1rHvaatt8YxFCB0v92SSWHsqr8gcdh6g",
