@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { faPenToSquare, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
-
 @Component({
   selector: 'ralbx-table',
   templateUrl: './table.component.html',

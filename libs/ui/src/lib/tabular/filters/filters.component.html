@@ -1,0 +1,22 @@
+<table class="is-full-width">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Categro</th>
+      <th>Quant</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngrxLet="products1 as product; let e = $error; let c = $complete">
+      <td>{{ product.code }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.category }}</td>
+      <td>{{ product.quantity }}</td>
+      <td>{{ product.price }}</td>
+      <div *ngIf="e">error: {{ e }}</div>
+      <div *ngIf="c">completed: {{ c }}</div>
+    </tr>
+  </tbody>
+</table>
