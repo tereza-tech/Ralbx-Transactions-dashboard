@@ -1,4 +1,5 @@
 export const environment = {
+  NX_BRANCH: 'testing',
   production: true,
   firebaseConfig: {
     /*  apiKey: "AIzaSyB1rHvaatt8YxFCB0v92SSWHsqr8gcdh6g",
