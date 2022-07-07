@@ -7,11 +7,11 @@
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
+    "build:cloud:NX_BRANCH": "npx node-env-run --exec \"nx g @nrwl/nx-cloud:init\"",
     "start-fe": "nx serve app-transactions -o",
     "start-be": "json-server --watch ./mock/db.json",
     "start": "concurrently \"npm:start-fe\" \"npm:start-be\"",
     "build": "nx build",
-    "runme": "npx nx run app-transactions: build",
     "test": "nx test"
   },
   "private": false,
