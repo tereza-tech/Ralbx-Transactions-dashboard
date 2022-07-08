@@ -4,12 +4,12 @@
   "license": "MIT",
   "scripts": {
     "ng": "nx",
-    "build": "npm nx run app-transactions:build",
+    "build": "npx nx run app-transactions:build",
     "dev": "concurrently \"npm:start-fe\" \"npm:start-be\"",
     "start-fe": "nx serve app-transactions -o",
     "start-be": "json-server --watch ./mock/db.json",
     "nmods:uninstall": "npx rimraf ./node_modules",
-    "build:cloud:NX_BRANCH": "npx node-env-run --exec \"nx g @nrwl/nx-cloud:init\"",
+    "build:cloud:NX_BRANCH": "npx node-env-run --exec \"npx nx run app-transactions:build\"",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "test": "nx test"
   },

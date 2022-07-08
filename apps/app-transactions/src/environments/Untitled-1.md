@@ -2,10 +2,11 @@
 ```
 ├──core
 │   ├── 
-│   │   ├── authentication
-│   │   ├── environments
+│   │   ├── authentication/
+│   │   ├── environments/
 │   │   ├── env-scripts/
-│   │   ├── encryptions
+│   │   ├── credentials
+│   │   ├── ...
 │   ├── data
 │   │   ├── local
 │   │   │   ├── api
