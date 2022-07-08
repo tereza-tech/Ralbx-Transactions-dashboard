@@ -1,17 +1,16 @@
 {
   "name": "ralbx",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
-  "main": "apps/app-transactions/src/main.js",
-  "type": "module",
   "scripts": {
     "ng": "nx",
-    "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
-    "build:cloud:NX_BRANCH": "npx node-env-run --exec \"nx g @nrwl/nx-cloud:init\"",
+    "build": "npm nx run app-transactions:build",
+    "dev": "concurrently \"npm:start-fe\" \"npm:start-be\"",
     "start-fe": "nx serve app-transactions -o",
     "start-be": "json-server --watch ./mock/db.json",
-    "start": "concurrently \"npm:start-fe\" \"npm:start-be\"",
-    "build": "nx build",
+    "nmods:uninstall": "npx rimraf ./node_modules",
+    "build:cloud:NX_BRANCH": "npx node-env-run --exec \"nx g @nrwl/nx-cloud:init\"",
+    "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "test": "nx test"
   },
   "private": false,

@@ -8,6 +8,10 @@
 # dependencies
 node_modules
 
+# Fidelities
+.env
+.external_resources
+
 # IDEs and editors
 /.idea
 .project
